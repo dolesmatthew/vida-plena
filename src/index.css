@@ -1,95 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap');
 
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-   --color-terracotta: oklch(0.6535 0.1054 46.31);
-} 
-
-@layer base {
-  :root {
-    --font-serif: 'Cormorant Garamond', Georgia, serif;
-    --font-sans: 'Inter', system-ui, sans-serif;
-
-    --background: 36 33% 96%;
-    --foreground: 0 0% 10%;
-    --card: 36 33% 96%;
-    --card-foreground: 0 0% 10%;
-    --popover: 36 33% 96%;
-    --popover-foreground: 0 0% 10%;
-    --primary: 20 48% 55%;
-    --primary-foreground: 36 33% 96%;
-    --secondary: 126 12% 27%;
-    --secondary-foreground: 36 33% 96%;
-    --muted: 36 20% 90%;
-    --muted-foreground: 0 0% 35%;
-    --accent: 126 12% 27%;
-    --accent-foreground: 36 33% 96%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 36 15% 85%;
-    --input: 36 15% 85%;
-    --ring: 20 48% 55%;
-    --chart-1: 20 48% 55%;
-    --chart-2: 126 12% 27%;
-    --chart-3: 36 33% 80%;
-    --chart-4: 0 0% 10%;
-    --chart-5: 20 48% 70%;
-    --radius: 0.5rem;
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 0 0% 7%;
-    --foreground: 36 33% 96%;
-    --card: 0 0% 10%;
-    --card-foreground: 36 33% 96%;
-    --popover: 0 0% 10%;
-    --popover-foreground: 36 33% 96%;
-    --primary: 20 48% 55%;
-    --primary-foreground: 36 33% 96%;
-    --secondary: 126 12% 27%;
-    --secondary-foreground: 36 33% 96%;
-    --muted: 0 0% 14%;
-    --muted-foreground: 36 20% 65%;
-    --accent: 126 12% 27%;
-    --accent-foreground: 36 33% 96%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 18%;
-    --input: 0 0% 18%;
-    --ring: 20 48% 55%;
-    --chart-1: 20 48% 55%;
-    --chart-2: 126 12% 35%;
-    --chart-3: 36 33% 40%;
-    --chart-4: 36 33% 90%;
-    --chart-5: 20 48% 70%;
-    --sidebar-background: 0 0% 7%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
+  --color-terracotta: oklch(0.6535 0.1054 46.31);
+  --color-evergreen: oklch(0.4 0.028 146.96);
+  --color-alabaster: oklch(0.9763 0.007 88.64);
+  --color-obsidian: oklch(0.2178 0 0);
+  --color-muted: oklch(0.9291 0.0103 81.79);
+  --color-background: oklch(0.9713 0.0062 75.41);
+  --font-serif: Cormorant Garamond, Georgia, serif;
+  --font-sans: Inter, system-ui, sans-serif;
 }
-
-/* @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-} */
 
 /* Smooth scrolling */
 html {

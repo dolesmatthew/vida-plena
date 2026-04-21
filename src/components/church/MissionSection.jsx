@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const TEXTURE_IMG = 'https://media.base44.com/images/public/69e79428dcd983c7719be231/2af60a05a_generated_93489b7b.png';
+const TEXTURE_IMG =
+  'https://media.base44.com/images/public/69e79428dcd983c7719be231/2af60a05a_generated_93489b7b.png';
 
 export default function MissionSection() {
   return (
@@ -13,8 +14,7 @@ export default function MissionSection() {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.7 }}
-          >
+            transition={{ duration: 0.7 }}>
             <p className="font-sans text-sm tracking-[0.25em] uppercase text-terracotta mb-6">
               We Are
             </p>
@@ -25,9 +25,8 @@ export default function MissionSection() {
             </h2>
             <div className="w-16 h-px bg-terracotta mt-8 mb-8" />
             <p className="font-sans text-lg text-obsidian/60 leading-relaxed max-w-lg">
-              Following Jesus in our uniqueness. Planting missional churches 
-              in collaboration with immigrant churches to disciple the next 
-              generation and beyond.
+              Following Jesus in our uniqueness. Planting missional churches in collaboration with
+              immigrant churches to disciple the next generation and beyond.
             </p>
           </motion.div>
 
@@ -37,8 +36,7 @@ export default function MissionSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="relative"
-          >
+            className="relative">
             <div className="portal-shape overflow-hidden aspect-square">
               <img
                 src={TEXTURE_IMG}
