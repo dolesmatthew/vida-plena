@@ -86,30 +86,6 @@ export default function LeadershipSection() {
             </motion.div>
           ))}
         </div>
-
-        {/* Volunteer CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mt-16 text-center">
-          <p className="font-serif text-2xl md:text-3xl text-obsidian mb-8 italic">
-            We invite you to use your gifts!
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="mailto:thekindredchurch24@gmail.com?subject=Volunteering%20at%20The%20Kindred%20Church"
-              className="px-8 py-3 bg-terracotta text-alabaster font-sans text-sm font-medium rounded-full hover:bg-terracotta/90 transition-colors">
-              Volunteer
-            </a>
-            <a
-              href="mailto:thekindredchurch24@gmail.com?subject=Internships%20at%20The%20Kindred%20Church"
-              className="px-8 py-3 border border-obsidian/20 text-obsidian font-sans text-sm font-medium rounded-full hover:bg-obsidian hover:text-alabaster transition-colors">
-              Internships
-            </a>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

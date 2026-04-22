@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 
 const HERO_IMG =
-  'https://t3.ftcdn.net/jpg/06/25/43/52/360_F_625435253_Kr0zKuBh5lNHWstvTYWS5WE675CJb6Gn.jpg';
+  'https://vastphotos.com/files/uploads/photos/10588/chicago-skyline-photo-l.jpg?v=20240918062827';
 
 export default function HeroSection() {
   const { t } = useTranslation();

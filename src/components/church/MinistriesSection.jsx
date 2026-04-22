@@ -54,7 +54,7 @@ export default function MinistriesSection() {
   };
 
   return (
-    <section id="ministries" className="py-24 md:py-36 bg-background overflow-hidden">
+    <section id="ministries" className="py-24 md:py-36 bg-muted overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
           <motion.div
@@ -120,16 +120,6 @@ export default function MinistriesSection() {
             </div>
           </motion.div>
         ))}
-      </div>
-
-      <div className="max-w-7xl mx-auto px-6 md:px-12 mt-10">
-        <a
-          href="https://discord.gg/DtMWJ6MStZ"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-obsidian text-alabaster font-sans text-sm font-medium rounded-full hover:bg-obsidian/80 transition-colors">
-          Join our Discord to get involved
-        </a>
       </div>
     </section>
   );

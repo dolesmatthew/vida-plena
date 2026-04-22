@@ -4,7 +4,7 @@ import { Clock, MapPin, Shirt, Users } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const MEAL_IMG =
-  'https://media.base44.com/images/public/69e79428dcd983c7719be231/456c88871_generated_2421f7b9.png';
+  'https://www.npcovenant.org/wp-content/themes/npcc-theme-prod/images/bell-tower.jpg';
 
 export default function SundaysSection() {
   const { t } = useTranslation();
