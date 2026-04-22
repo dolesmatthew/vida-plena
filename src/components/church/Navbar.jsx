@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import LanguageSelector from '../ui/languageSelector';
 
 const NAV_LINKS = [
   { label: 'Home', href: '#hero' },
@@ -21,7 +22,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const y = window.scrollY;
-      setVisible(y < 100 || y < lastY);
+      setVisible(y < 200 || y < lastY);
       setScrolled(y > 50);
       setLastY(y);
     };
@@ -35,14 +36,12 @@ export default function Navbar() {
         initial={{ y: 0 }}
         animate={{ y: visible ? 0 : -100 }}
         transition={{ duration: 0.3, ease: 'easeInOut' }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? 'bg-alabaster/80 backdrop-blur-xl shadow-sm' : 'bg-transparent'
-        }`}>
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-alabaster/80 backdrop-blur-xl shadow-sm`}>
         <nav className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
           <a
             href="#hero"
             className="font-serif text-2xl md:text-3xl font-semibold tracking-wide text-obsidian">
-            KINDRED
+            Vida Plena
           </a>
 
           {/* Desktop nav */}
@@ -55,11 +54,7 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-            <a
-              href="#sundays"
-              className="ml-2 px-5 py-2.5 bg-terracotta text-alabaster text-sm font-sans font-medium rounded-full hover:bg-terracotta/90 transition-colors">
-              Plan a Visit
-            </a>
+            <LanguageSelector />
           </div>
 
           {/* Mobile menu toggle */}
@@ -91,12 +86,7 @@ export default function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <a
-                href="#sundays"
-                onClick={() => setMenuOpen(false)}
-                className="mt-4 px-8 py-3 bg-terracotta text-alabaster font-sans font-medium rounded-full text-lg">
-                Plan a Visit
-              </a>
+              <LanguageSelector />
             </div>
           </motion.div>
         )}

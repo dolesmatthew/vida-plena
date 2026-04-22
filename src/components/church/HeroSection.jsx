@@ -1,11 +1,14 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 
 const HERO_IMG =
-  'https://media.base44.com/images/public/69e79428dcd983c7719be231/b5f50e107_generated_11360a49.png';
+  'https://t3.ftcdn.net/jpg/06/25/43/52/360_F_625435253_Kr0zKuBh5lNHWstvTYWS5WE675CJb6Gn.jpg';
 
 export default function HeroSection() {
+  const { t } = useTranslation();
+
   return (
     <section
       id="hero"
@@ -27,27 +30,24 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: 'easeOut' }}>
           <p className="font-sans text-sm md:text-base tracking-[0.3em] uppercase text-alabaster/60 mb-4">
-            The Kindred Church
+            {t('hero.fullChurchName')}
           </p>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light text-alabaster leading-[1.05]">
-            Through <span className="italic text-terracotta">Jesus</span>
-            <br />
-            We become a family
+            {t('hero.line1')} <br /> {t('hero.line2')}
           </h1>
           <p className="font-sans text-lg md:text-xl text-alabaster/70 mt-6 max-w-xl leading-relaxed">
-            A missional church in Naperville, IL — where every heritage finds home through the love
-            of Christ.
+            {t('hero.about')}
           </p>
           <div className="flex flex-wrap items-center gap-4 mt-10">
             <a
               href="#sundays"
               className="inline-flex items-center px-8 py-4 bg-terracotta text-alabaster font-sans font-medium rounded-full hover:bg-terracotta/90 transition-colors text-base">
-              Plan a Visit
+              {t('hero.visit')}
             </a>
             <a
               href="#about"
               className="inline-flex items-center gap-2 px-6 py-4 text-alabaster font-sans font-medium hover:text-terracotta transition-colors text-base">
-              About Us <ChevronRight className="w-4 h-4" />
+              {t('aboutUs')} <ChevronRight className="w-4 h-4" />
             </a>
           </div>
         </motion.div>
@@ -64,14 +64,10 @@ export default function HeroSection() {
             <div className="flex items-center gap-3">
               <div className="w-2 h-2 rounded-full bg-terracotta animate-pulse" />
               <p className="font-sans text-sm text-alabaster/80">
-                <span className="font-medium text-alabaster">Next Service:</span> Sunday at 11AM
+                <span className="font-medium text-alabaster">{t('hero.nextService')}</span>{' '}
+                {t('hero.nextServiceTime')}
               </p>
             </div>
-            <a
-              href="#sundays"
-              className="px-5 py-2 bg-terracotta text-alabaster text-sm font-sans font-medium rounded-full hover:bg-terracotta/90 transition-colors">
-              Plan Your Visit
-            </a>
           </div>
         </div>
       </motion.div>
