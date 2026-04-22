@@ -51,7 +51,7 @@ export default function FooterSection() {
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-alabaster/40 mt-0.5" />
                 <p className="font-sans text-sm text-alabaster/70">
-                  {t('sundays.locationDescription')}
+                  {t('footer.addressLine1')} <br /> {t('footer.addressLine2')}
                 </p>
               </div>
             </div>

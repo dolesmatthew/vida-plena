@@ -11,16 +11,19 @@ const LanguageSelector = () => {
 
   return (
     <div className="flex items-center gap-1 bg-obsidian/8 rounded-full p-0.5 border border-obsidian/10">
-      {['en', 'es'].map((l) => (
+      {[
+        { key: 'en', values: ['en', 'en-US'] },
+        { key: 'es', values: ['es', 'es-ES'] }
+      ].map((l) => (
         <button
-          key={l}
-          onClick={() => handleLanguageChange(l)}
+          key={l.key}
+          onClick={() => handleLanguageChange(l.key)}
           className={`px-3 py-1 rounded-full text-xs font-sans font-semibold tracking-wider uppercase transition-all duration-200 ${
-            language === l
+            l.values.includes(language)
               ? 'bg-terracotta text-alabaster shadow-sm'
               : 'text-obsidian/50 hover:text-obsidian'
           }`}>
-          {l}
+          {l.key}
         </button>
       ))}
     </div>
