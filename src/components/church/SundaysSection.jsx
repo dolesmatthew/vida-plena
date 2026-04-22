@@ -1,18 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Clock, MapPin, Shirt, Users } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const MEAL_IMG =
   'https://media.base44.com/images/public/69e79428dcd983c7719be231/456c88871_generated_2421f7b9.png';
 
-const INFO_ITEMS = [
-  { icon: Clock, label: 'Time', value: '11am' },
-  { icon: MapPin, label: 'Location', value: '23W550 Hobson Rd. #1, Naperville, IL 60540' },
-  { icon: Shirt, label: 'Attire', value: 'Come as you are' },
-  { icon: Users, label: 'Childcare', value: 'Available during service' }
-];
-
 export default function SundaysSection() {
+  const { t } = useTranslation();
+
+  const INFO_ITEMS = [
+    { icon: Clock, label: t('sundays.time'), value: t('sundays.timeDescription') },
+    { icon: MapPin, label: t('sundays.location'), value: t('sundays.locationDescription') },
+    { icon: Shirt, label: t('sundays.attire'), value: t('sundays.attireDescription') },
+    { icon: Users, label: t('sundays.childcare'), value: t('sundays.childcareDescription') }
+  ];
   return (
     <section
       id="sundays"
@@ -43,16 +45,17 @@ export default function SundaysSection() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="lg:col-span-3">
             <p className="font-sans text-sm tracking-[0.25em] uppercase text-terracotta mb-6">
-              Sundays
+              {t('sundays.sundays')}
             </p>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-alabaster leading-[1.1] mb-8">
-              Connect to <span className="italic">God.</span>
+              {t('sundays.line1')}
+              <span className="italic">{t('sundays.line1Italics')}</span>
               <br />
-              Connect to <span className="italic">one another.</span>
+              {t('sundays.line2')}
+              <span className="italic">{t('sundays.line2Italics')}</span>
             </h2>
             <p className="font-sans text-lg text-alabaster/70 leading-relaxed mb-12 max-w-xl">
-              Join us as we worship together as a family. After each service we gather for lunch in
-              a time of fellowship; we'd love for you to join us.
+              {t('sundays.description')}
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6">
@@ -73,14 +76,14 @@ export default function SundaysSection() {
 
             <div className="flex flex-wrap gap-4 mt-10">
               <a
-                href="https://maps.app.goo.gl/eF8fkyL7cgupxaFk7"
+                href="https://maps.app.goo.gl/muheeJTbSW1FRgNK8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 border border-alabaster/30 text-alabaster font-sans text-sm font-medium rounded-full hover:bg-alabaster/10 transition-colors">
                 Google Maps
               </a>
               <a
-                href="https://maps.apple.com/place?place-id=ICC1AECC2083FFB15&_provider=9902"
+                href="https://maps.apple/p/LV3M2nWnFXue_4"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 border border-alabaster/30 text-alabaster font-sans text-sm font-medium rounded-full hover:bg-alabaster/10 transition-colors">

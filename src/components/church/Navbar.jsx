@@ -1,23 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import LanguageSelector from '../ui/languageSelector';
+import { useTranslation } from 'react-i18next';
 
-const NAV_LINKS = [
-  { label: 'Home', href: '#hero' },
-  { label: 'Sundays', href: '#sundays' },
-  { label: 'Ministries', href: '#ministries' },
-  { label: 'About', href: '#about' },
-  { label: 'Beliefs', href: '#beliefs' },
-  { label: 'Leadership', href: '#leadership' },
-  { label: 'Offering', href: '#giving' }
-];
+import LanguageSelector from '../ui/languageSelector';
 
 export default function Navbar() {
   const [visible, setVisible] = useState(true);
   const [lastY, setLastY] = useState(0);
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const { t } = useTranslation();
+
+  const NAV_LINKS = [
+    { label: t('navbar.home'), href: '#hero' },
+    { label: t('navbar.sundays'), href: '#sundays' },
+    { label: t('navbar.ministries'), href: '#ministries' },
+    { label: t('navbar.about'), href: '#about' },
+    { label: t('navbar.beliefs'), href: '#beliefs' },
+    { label: t('navbar.leadership'), href: '#leadership' },
+    { label: t('navbar.giving'), href: '#giving' }
+  ];
 
   useEffect(() => {
     const handleScroll = () => {

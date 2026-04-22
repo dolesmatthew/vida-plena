@@ -1,6 +1,14 @@
 {
   "aboutUs": "Sobre Nosotros",
   "churchName": "Vida Plena",
+  "footer": {
+    "addressLine1": "5250 N. Christiana Ave",
+    "addressLine2": "Chicago, IL 60625",
+    "connect": "Conectar",
+    "email": "Envíanos un correo",
+    "verse": "De cierto os digo, que si tuviereis fe como un grano de mostaza, diréis a este monte: Pásate de aquí allá, y se pasará; y nada os será imposible.",
+    "verseReference": "Mateo 17:20"
+  },
   "hero": {
     "about": "Una iglesia de habla hispana en Chicago, IL — donde cada herencia encuentra hogar a través del amor de Cristo.",
     "fullChurchName": "Iglesia del Pacto Vida Plena",
@@ -9,5 +17,30 @@
     "nextService": "Próximo Servicio:",
     "nextServiceTime": "Domingo a la 1:30 PM",
     "visit": "Planificar una Visita"
+  },
+  "navbar": {
+    "home": "Inicio",
+    "sundays": "Domingos",
+    "ministries": "Ministerios",
+    "about": "Acerca De",
+    "beliefs": "Creencias",
+    "leadership": "Liderazgo",
+    "giving": "Donaciones"
+  },
+  "sundays": {
+    "attire": "Vestimenta",
+    "attireDescription": "¡Ven como eres!",
+    "childcare": "Cuidado de niños",
+    "childcareDescription": "Disponible durante el servicio",
+    "description": "Nos encantaría que te unas a nosotros mientras adoramos y compartimos juntos como familia.",
+    "time": "Hora",
+    "timeDescription": "1:30 PM",
+    "location": "Ubicación",
+    "locationDescription": "5250 N. Christiana Ave, Chicago, IL 60625",
+    "sundays": "Domingos",
+    "line1": "Conéctate con ",
+    "line1Italics": "Dios",
+    "line2": "Conéctate y con ",
+    "line2Italics": "otros"
   }
 }

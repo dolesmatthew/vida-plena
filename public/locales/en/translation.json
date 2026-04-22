@@ -1,6 +1,14 @@
 {
   "aboutUs": "About Us",
   "churchName": "Vida Plena",
+  "footer": {
+    "addressLine1": "5250 N. Christiana Ave",
+    "addressLine2": "Chicago, IL 60625",
+    "connect": "Connect",
+    "email": "Email Us",
+    "verse": "Truly I tell you, if you have faith as small as a mustard seed, you can say to this mountain, 'Move from here to there,' and it will move. Nothing will be impossible for you.",
+    "verseReference": "Matthew 17:20"
+  },
   "hero": {
     "about": " A Spanish speaking church in Chicago, IL — where every heritage finds home through the love of Christ.",
     "fullChurchName": "Vida Plena Covenant Church",
@@ -9,5 +17,30 @@
     "nextService": "Next Service:",
     "nextServiceTime": "Sunday at 1:30 PM",
     "visit": "Plan a Visit"
+  },
+  "navbar": {
+    "home": "Home",
+    "sundays": "Sundays",
+    "ministries": "Ministries",
+    "about": "About",
+    "beliefs": "Beliefs",
+    "leadership": "Leadership",
+    "giving": "Giving"
+  },
+  "sundays": {
+    "attire": "Attire",
+    "attireDescription": "Come as you are!",
+    "childcare": "Childcare",
+    "childcareDescription": "Available during service",
+    "description": "We'd love for you to join us as we worship and fellowship together as a family.",
+    "time": "Time",
+    "timeDescription": "1:30 PM",
+    "location": "Location",
+    "locationDescription": "5250 N. Christiana Ave, Chicago, IL 60625",
+    "sundays": "Sundays",
+    "line1": "Connect with ",
+    "line1Italics": "God",
+    "line2": "Connect and with",
+    "line2Italics": "one another"
   }
 }
