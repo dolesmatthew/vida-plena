@@ -9,13 +9,23 @@
     "verse": "Truly I tell you, if you have faith as small as a mustard seed, you can say to this mountain, 'Move from here to there,' and it will move. Nothing will be impossible for you.",
     "verseReference": "Matthew 17:20"
   },
+  "giving": {
+    "description": "YThrough your generosity, you help spread the gospel message and support the life of our community.",
+    "givingCardTitle": "Give via Zelle",
+    "givingCardDescription": "Send your donations via Zelle to:",
+    "givingCardButton": "Copy",
+    "givingCardButtonClicked": "Copied",
+    "line1": "The Generosity",
+    "line1Italics": "Flow",
+    "title": "Offering"
+  },
   "hero": {
     "about": " A Spanish speaking church in Chicago, IL — where every heritage finds home through the love of Christ.",
     "fullChurchName": "Vida Plena Covenant Church",
     "line1": "A place to grow",
     "line2": "in faith and love",
-    "nextService": "Next Service:",
-    "nextServiceTime": "Sunday at 1:30 PM",
+    "nextService": "Services:",
+    "nextServiceTime": "Sundays at 1:30 PM",
     "visit": "Plan a Visit"
   },
   "navbar": {

@@ -1,33 +1,29 @@
 import { useState } from 'react';
 import i18next from 'i18next';
 
-const languageOptions = [
-  { language: 'English', code: 'en' },
-  { language: 'Spanish', code: 'es' }
-];
-
 const LanguageSelector = () => {
   const [language, setLanguage] = useState(i18next.language);
 
-  const handleLanguageChange = (e) => {
-    const selectedLanguage = e.target.value;
+  const handleLanguageChange = (selectedLanguage) => {
     setLanguage(selectedLanguage);
     i18next.changeLanguage(selectedLanguage);
   };
 
   return (
-    <select
-      id="language"
-      value={language}
-      onChange={handleLanguageChange}
-      className="p-2 border border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-        dark:bg-gray-800 dark:border-gray-600 dark:text-gray-200 dark:focus:border-indigo-400 dark:focus:ring-indigo-700 dark:focus:ring-opacity-50">
-      {languageOptions.map(({ language, code }, key) => (
-        <option value={code} key={key}>
-          {language}
-        </option>
+    <div className="flex items-center gap-1 bg-obsidian/8 rounded-full p-0.5 border border-obsidian/10">
+      {['en', 'es'].map((l) => (
+        <button
+          key={l}
+          onClick={() => handleLanguageChange(l)}
+          className={`px-3 py-1 rounded-full text-xs font-sans font-semibold tracking-wider uppercase transition-all duration-200 ${
+            language === l
+              ? 'bg-terracotta text-alabaster shadow-sm'
+              : 'text-obsidian/50 hover:text-obsidian'
+          }`}>
+          {l}
+        </button>
       ))}
-    </select>
+    </div>
   );
 };
 

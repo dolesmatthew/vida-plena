@@ -9,13 +9,23 @@
     "verse": "De cierto os digo, que si tuviereis fe como un grano de mostaza, diréis a este monte: Pásate de aquí allá, y se pasará; y nada os será imposible.",
     "verseReference": "Mateo 17:20"
   },
+  "giving": {
+    "description": "A través de tu generosidad, ayudas a difundir el mensaje del evangelio y apoyas la vida de nuestra comunidad.",
+    "givingCardTitle": "Dona vía Zelle",
+    "givingCardDescription": "Envía tus donaciones vía Zelle a:",
+    "givingCardButton": "Copiar",
+    "givingCardButtonClicked": "Copiado",
+    "line1": "El flujo",
+    "line1Italics": "de la Generosidad",
+    "title": "Ofrenda"
+  },
   "hero": {
     "about": "Una iglesia de habla hispana en Chicago, IL — donde cada herencia encuentra hogar a través del amor de Cristo.",
     "fullChurchName": "Iglesia del Pacto Vida Plena",
     "line1": "Un lugar para crecer",
     "line2": "en fe y amor",
-    "nextService": "Próximo Servicio:",
-    "nextServiceTime": "Domingo a la 1:30 PM",
+    "nextService": "Servicios:",
+    "nextServiceTime": "Domingos a las 1:30 PM",
     "visit": "Planificar una Visita"
   },
   "navbar": {
