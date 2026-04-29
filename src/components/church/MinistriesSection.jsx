@@ -1,19 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import CLASSROOM_IMG from '../../../images/classroom.png';
+import COUNSELING_IMG from '../../../images/counseling.jpg';
 const MINISTRIES = [
   {
     title: 'Chidlren’s Ministry',
     time: 'Sundays during service',
     description:
       'Children are welcomed into a fun atomosphere where they can grow and learn to fall in love with Jesus.',
-    image: './images/classroom.png'
+    image: CLASSROOM_IMG
   },
   {
     title: 'Counseling',
     time: 'By appointment',
     description: 'Our lay counselors are here to listen, guide, and pray with you.',
-    image: './images/counseling.jpg'
+    image: COUNSELING_IMG
   }
 ];
 

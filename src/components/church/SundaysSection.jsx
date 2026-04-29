@@ -2,8 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Clock, MapPin, Shirt, Users } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-
-const MEAL_IMG = './images/bell-tower.jpg';
+import BELL_TOWER_IMG from '../../../images/bell-tower.jpg';
 
 export default function SundaysSection() {
   const { t } = useTranslation();
@@ -29,8 +28,8 @@ export default function SundaysSection() {
             className="lg:col-span-2 flex items-center justify-center w-full">
             <div className="portal-shape-alt overflow-hidden">
               <img
-                src={MEAL_IMG}
-                alt="Community sharing a meal together"
+                src={BELL_TOWER_IMG}
+                alt="Bell tower of the church"
                 className="h-100 lg:h-full w-100 lg:w-full aspect-4/5 object-cover"
               />
             </div>

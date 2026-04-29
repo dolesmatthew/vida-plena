@@ -2,8 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
-
-const HERO_IMG = './images/np-campus.png';
+import HERO_IMG from '../../../images/np-campus.png';
 
 export default function HeroSection() {
   const { t } = useTranslation();
