@@ -19,14 +19,14 @@ export default function MissionSection() {
               We Are
             </p>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-obsidian leading-[1.1]">
-              Unapologetically
+              A church that transforms the
               <br />
-              <span className="italic">Christian.</span>
+              <span className="italic">community.</span>
             </h2>
             <div className="w-16 h-px bg-terracotta mt-8 mb-8" />
             <p className="font-sans text-lg text-obsidian/60 leading-relaxed max-w-lg">
-              Following Jesus in our uniqueness. Planting missional churches in collaboration with
-              immigrant churches to disciple the next generation and beyond.
+              To impact out community through service, justice, and the love of Christ, being a
+              light in the midst of the city.
             </p>
           </motion.div>
 

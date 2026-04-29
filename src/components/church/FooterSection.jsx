@@ -33,7 +33,10 @@ export default function FooterSection() {
             <h3 className="font-serif text-2xl font-semibold tracking-wide mb-4">
               {t('churchName')}
             </h3>
-            <p className="font-sans text-sm text-alabaster/60 leading-relaxed">{t('hero.about')}</p>
+            <p className="font-sans text-sm text-alabaster/60 leading-relaxed">
+              To impact out community through service, justice, and the love of Christ, being a
+              light in the midst of the city.
+            </p>
           </div>
 
           {/* Service Info */}

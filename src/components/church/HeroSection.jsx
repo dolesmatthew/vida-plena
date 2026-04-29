@@ -3,8 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 
-const HERO_IMG =
-  'https://vastphotos.com/files/uploads/photos/10588/chicago-skyline-photo-l.jpg?v=20240918062827';
+const HERO_IMG = './images/np-campus.png';
 
 export default function HeroSection() {
   const { t } = useTranslation();
@@ -29,15 +28,9 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: 'easeOut' }}>
-          <p className="font-sans text-sm md:text-base tracking-[0.3em] uppercase text-alabaster/60 mb-4">
-            {t('hero.fullChurchName')}
-          </p>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light text-alabaster leading-[1.05]">
-            {t('hero.line1')} <br /> {t('hero.line2')}
+            {t('hero.fullChurchName')}
           </h1>
-          <p className="font-sans text-lg md:text-xl text-alabaster/70 mt-6 max-w-xl leading-relaxed">
-            {t('hero.about')}
-          </p>
           <div className="flex flex-wrap items-center gap-4 mt-10">
             <a
               href="#sundays"
@@ -45,7 +38,7 @@ export default function HeroSection() {
               {t('hero.visit')}
             </a>
             <a
-              href="#about"
+              href="#beliefs"
               className="inline-flex items-center gap-2 px-6 py-4 text-alabaster font-sans font-medium hover:text-terracotta transition-colors text-base">
               {t('aboutUs')} <ChevronRight className="w-4 h-4" />
             </a>

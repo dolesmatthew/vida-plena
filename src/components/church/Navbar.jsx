@@ -16,9 +16,7 @@ export default function Navbar() {
     { label: t('navbar.home'), href: '#hero' },
     { label: t('navbar.sundays'), href: '#sundays' },
     { label: t('navbar.ministries'), href: '#ministries' },
-    { label: t('navbar.about'), href: '#about' },
     { label: t('navbar.beliefs'), href: '#beliefs' },
-    { label: t('navbar.leadership'), href: '#leadership' },
     { label: t('navbar.giving'), href: '#giving' }
   ];
 

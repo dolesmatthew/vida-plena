@@ -18,11 +18,10 @@ export default function AboutSection() {
             About
           </p>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-obsidian leading-[1.1] max-w-3xl mx-auto">
-            People from various heritages connected by <span className="italic">Jesus</span> and His
-            mission.
+            A church that transforms the <span className="italic">community</span>
           </h2>
         </motion.div>
-
+        <div className="flex justify-self-center w-16 h-px bg-terracotta mt-8 mb-8" />
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -39,10 +38,8 @@ export default function AboutSection() {
           <div className="absolute inset-0 bg-gradient-to-r from-obsidian/40 to-transparent rounded-2xl" />
           <div className="absolute bottom-0 left-0 p-8 md:p-12 max-w-xl">
             <p className="font-sans text-base md:text-lg text-alabaster/90 leading-relaxed">
-              Our vision is to become a planting church. We are particularly excited about planting
-              a new church that gives a future for young people growing up in an immigrant church.
-              We are starting here in Naperville, but we pray that God will lead us beyond this
-              land, beyond this people group.
+              To impact out community through service, justice, and the love of&nbsp;
+              <span className="italic">Christ</span>, being a light in the midst of the city.
             </p>
           </div>
         </motion.div>

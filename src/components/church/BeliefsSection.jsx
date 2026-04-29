@@ -4,39 +4,26 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '..
 
 const BELIEFS = [
   {
-    id: 'god',
-    title: 'God',
-    text: 'We believe in one God in three persons: Father, Son, and Holy Spirit. The trinity exemplifies the unity and co-equality of the three persons of the Godhead.'
+    id: 'what-is-a-covenant-church',
+    title: 'What is a Covenant Church?',
+    text: [
+      'The Evangelical Covenant Church is a rapidly growing multiethnic denomination in the United States and Canada with ministries on five continents of the world.',
+      'Founed in 1885 by Swedish immigrants, the ECC values the Bible as the word of God, the gift of God’s grace and ever-deepening spiritial life that comes through faith with Jesus Christ, the importance of extending God’s love and compassion to a hurting world, and the strength that comes from unity within diversity.'
+    ]
   },
   {
-    id: 'jesus',
-    title: 'Jesus Christ',
-    text: "We believe that Jesus Christ is fully God and fully human. We believe that Jesus' death and resurrection provide the means for redemption and reconciliation with God. He continues to mediate for us, prays for us."
-  },
-  {
-    id: 'spirit',
-    title: 'Holy Spirit',
-    text: "We believe in the active work of the Holy Spirit in the lives of believers, including guidance, empowerment, and the impartation of spiritual gifts. God gives spiritual gifts according to His grace, and it is intended to build up God's people."
-  },
-  {
-    id: 'salvation',
-    title: 'Salvation',
-    text: "We believe that salvation is a gift from God, received through faith in Jesus Christ, not by human works or merit. Salvation is given to those who've made a conscious decision to accept Jesus as Lord and Savior."
-  },
-  {
-    id: 'scripture',
-    title: 'Scripture',
-    text: 'We believe that the Bible is the ultimate authority in all matters of faith and practice; it is divinely inspired, infallible, and inerrant in its original manuscripts.'
-  },
-  {
-    id: 'commission',
-    title: 'The Great Commission',
-    text: "We are committed to sharing the Good News of the Gospel to everyone. We believe that this is God's command for His followers to go and make disciples of all nations."
-  },
-  {
-    id: 'second-coming',
-    title: 'Second Coming',
-    text: "We believe in the future return of Jesus Christ to establish His kingdom, judge the world, and bring about the final consummation of God's plan."
+    id: 'what-do-we-affirm',
+    title: 'What Do We Affirm?',
+    text: [
+      'The Evangelical Covenant Church seeks to form and nurture communities that are deeply committed to Jesus Christ and passionately engaged in Christ’s mission in the world.',
+      'The purpose of Covenant affirmations is to make clear the values and principles that have guided the Evangelical Covenant Chrurch since its founding in 1885. For Covenant people, our essesntial beleifs are summed up in what we call Covenant Affirmations:',
+      'We affirm that the centrality of the word of God.',
+      'We affirm the necessity of the new birth.',
+      'We affirm a commitment to the whole mission of the church.',
+      'We affirm the church as a fellowship of believers.',
+      'We affirm a conscious dependence on the Holy Spirit.',
+      'We affirm the reality of freedom in Christ.'
+    ]
   }
 ];
 
@@ -73,7 +60,11 @@ export default function BeliefsSection() {
                   {belief.title}
                 </AccordionTrigger>
                 <AccordionContent className="font-sans text-base text-obsidian/60 leading-relaxed pb-5">
-                  {belief.text}
+                  {belief.text.map((paragraph, idx) => (
+                    <p key={idx} className="mb-4 last:mb-0">
+                      {paragraph}
+                    </p>
+                  ))}
                 </AccordionContent>
               </AccordionItem>
             ))}

@@ -3,8 +3,7 @@ import { motion } from 'framer-motion';
 import { Clock, MapPin, Shirt, Users } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
-const MEAL_IMG =
-  'https://www.npcovenant.org/wp-content/themes/npcc-theme-prod/images/bell-tower.jpg';
+const MEAL_IMG = './images/bell-tower.jpg';
 
 export default function SundaysSection() {
   const { t } = useTranslation();
@@ -27,12 +26,12 @@ export default function SundaysSection() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.7 }}
-            className="lg:col-span-2">
+            className="lg:col-span-2 flex items-center justify-center w-full">
             <div className="portal-shape-alt overflow-hidden">
               <img
                 src={MEAL_IMG}
                 alt="Community sharing a meal together"
-                className="w-full aspect-4/5 object-cover"
+                className="h-100 lg:h-full w-100 lg:w-full aspect-4/5 object-cover"
               />
             </div>
           </motion.div>

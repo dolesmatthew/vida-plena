@@ -18,9 +18,7 @@ function App() {
       <MissionSection />
       <SundaysSection />
       <MinistriesSection />
-      <AboutSection />
       <BeliefsSection />
-      <LeadershipSection />
       <GivingSection />
       <FooterSection />
     </div>

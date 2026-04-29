@@ -10,17 +10,21 @@
     "verseReference": "Matthew 17:20"
   },
   "giving": {
-    "description": "YThrough your generosity, you help spread the gospel message and support the life of our community.",
-    "givingCardTitle": "Give via Zelle",
-    "givingCardDescription": "Send your donations via Zelle to:",
-    "givingCardButton": "Copy",
-    "givingCardButtonClicked": "Copied",
-    "line1": "The Generosity",
-    "line1Italics": "Flow",
-    "title": "Offering"
+    "description": "Every cent that you give is used to further God's kingdom and help people in our church, city, and across the globe become all who God has called them to be. As you give, you are supporting not only the ministries of Vida Plena Covenant Church but also providing funding for community outreaches. We are so thankful for your heart and willingness to give. We pray that as you step out in faith to give, the Lord will bless you abundantly.",
+    "zelleTitle": "Give via Zelle",
+    "zelleDescription": "Send your donations via Zelle to:",
+    "zelleCardButton": "Copy",
+    "zelleCardButtonClicked": "Copied",
+    "zelleEmail": "vidaplenacov@gmail.com",
+    "line1": "Why",
+    "line1Italics": "Give?",
+    "title": "Giving",
+    "mailTitle": "Give via Mail",
+    "mailDescription": "Send a check to the address below:",
+    "mailAddressLine": "5250 N. Christiana Ave, Chicago, IL 60625",
+    "mailAttentionLine": "ATTN: Vida Plena Covenant Church"
   },
   "hero": {
-    "about": " A Spanish speaking church in Chicago, IL — where every heritage finds home through the love of Christ.",
     "fullChurchName": "Vida Plena Covenant Church",
     "line1": "A place to grow",
     "line2": "in faith and love",
@@ -50,7 +54,7 @@
     "sundays": "Sundays",
     "line1": "Connect with ",
     "line1Italics": "God",
-    "line2": "Connect and with",
+    "line2": "Connect with ",
     "line2Italics": "one another"
   }
 }

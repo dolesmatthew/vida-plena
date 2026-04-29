@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Copy, Check, Heart } from 'lucide-react';
+import { Copy, Check, Heart, Mail } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const GIVING_IMG =
@@ -17,7 +17,7 @@ export default function GivingSection() {
   };
 
   return (
-    <section id="giving" className="py-24 md:py-36 bg-muted overflow-hidden">
+    <section id="giving" className="py-24 md:py-36 bg-background overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left - Image */}
@@ -51,21 +51,21 @@ export default function GivingSection() {
               {t('giving.description')}
             </p>
 
-            <div className="bg-white/40 rounded-2xl p-8 md:p-10">
+            <div className="bg-muted rounded-2xl mb-6 p-8 md:p-10">
               <div className="flex items-center gap-3 mb-6">
                 <Heart className="w-5 h-5 text-terracotta" />
                 <p className="font-sans text-sm font-medium text-obsidian/70 uppercase tracking-wide">
-                  {t('giving.givingCardTitle')}
+                  {t('giving.zelleTitle')}
                 </p>
               </div>
 
               <p className="font-sans text-base text-obsidian/60 mb-4">
-                {t('giving.givingCardDescription')}
+                {t('giving.zelleDescription')}
               </p>
 
               <div className="flex items-center gap-3 bg-background rounded-xl px-5 py-4 border border-gray-300">
                 <p className="font-sans text-lg font-medium text-obsidian flex-1 truncate">
-                  placeholder@gmail.com
+                  {t('giving.zelleEmail')}
                 </p>
                 <button
                   onClick={handleCopy}
@@ -73,15 +73,33 @@ export default function GivingSection() {
                   {copied ? (
                     <>
                       <Check className="w-4 h-4" />
-                      {t('giving.givingCardButtonClicked')}
+                      {t('giving.zelleCardButtonClicked')}
                     </>
                   ) : (
                     <>
                       <Copy className="w-4 h-4" />
-                      {t('giving.givingCardButton')}
+                      {t('giving.zelleCardButton')}
                     </>
                   )}
                 </button>
+              </div>
+            </div>
+            <div className="bg-muted rounded-2xl p-8 md:p-10">
+              <div className="flex items-center gap-3 mb-6">
+                <Mail className="w-5 h-5 text-terracotta" />
+                <p className="font-sans text-sm font-medium text-obsidian/70 uppercase tracking-wide">
+                  {t('giving.mailTitle')}
+                </p>
+              </div>
+
+              <p className="font-sans text-base text-obsidian/60 mb-4">
+                {t('giving.mailDescription')}
+              </p>
+
+              <div className="flex items-center gap-3 bg-background rounded-xl px-5 py-4 border border-gray-300">
+                <p className="font-sans text-lg font-medium text-obsidian flex-1 truncate">
+                  {t('giving.mailAddressLine')} <br /> {t('giving.mailAttentionLine')}
+                </p>
               </div>
             </div>
           </motion.div>
